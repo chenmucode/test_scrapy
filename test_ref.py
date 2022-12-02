@@ -1,14 +1,13 @@
 import sys
 
-l = []
-l2 = l
-l3 = l
-l5 = l3
-print(sys.getrefcount(l))
 
 del l2
 print(sys.getrefcount(l))
-i = 2
+i = 32132131
 print(sys.getrefcount(i))
 a = i
 print(sys.getrefcount(i))
+
+
+if __name__ == '__main__':
+    print(1)
